@@ -18,7 +18,9 @@
             <li><a href="#contact">Contact</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="admin.js">Admin Login</a></li>
+            <li><button onclick="toggleTheme()">🌙</button></li>
         </ul>
+        
     </nav>
 
 
@@ -66,7 +68,7 @@
         <div><img src="images/github_logo.png" alt="GitHub Icon"><p>GitHub: <a href="https://github.com/BhoomiShri" >github.com/BhoomiShri</a></p></div>
         <div><img src="images/discord_logo.webp" alt="Discord Icon"><p>Discord: <a href="https://discord.com/users/1382689798309019779" >Bhoomi Shri</a></p></div>
         <div>
-            <form>
+            <form id="contactForm">
             <h3>Contact Form</h3>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="Full Name"><br><br>
@@ -95,7 +97,17 @@
             <li>Data Science</li>
         </ul>
         </div>
-    </section>      
+    </section> 
+    
+    <section id="admin" class="container">
+        <h2>Admin</h2>
+        <div id="loginBox">
+            <input id="username" placeholder="Username">
+            <input id="password" type="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </div>
+        <div id="responses" style="display:none"></div>
+    </section>
 
     <footer>
         <p>&copy; 2026 Bhoomi Shri. All rights reserved.</p>

@@ -25,6 +25,10 @@ nav ul li a {
         padding: 20px;
         font-weight: bold;
 }
+button {
+    padding:8px 12px; 
+    cursor:pointer;
+    background-color: #e3dddd;}
 div{
     border-radius: 30px;
     border: 10px solid #efabcf;
